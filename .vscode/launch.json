@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "HrConfigServerApplication",
+      "request": "launch",
+      "mainClass": "com.devsuperior.hrconfigserver.HrConfigServerApplication",
+      "projectName": "hr-config-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Main<hr-config-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.devsuperior.hrconfigserver.Main",
+      "projectName": "hr-config-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59735 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-config-server"
+    }
+  ]
+}
