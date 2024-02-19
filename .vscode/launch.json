@@ -17,6 +17,38 @@
       "args": "",
       "envFile": "${workspaceFolder}/.env",
       "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59735 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-config-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HrEurekaServerApplication<hr-eureka-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.devsuperior.hreurekaserver.HrEurekaServerApplication",
+      "projectName": "hr-eureka-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57741 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-eureka-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HrWorkerApplication<hr-worker>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.com.devsuperior.hrworker.HrWorkerApplication",
+      "projectName": "hr-worker",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57884 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-worker"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HrApiGatewayZuulApplication<hr-api-gateway-zuul>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.devsuperior.hrapigatewayzuul.HrApiGatewayZuulApplication",
+      "projectName": "hr-api-gateway-zuul",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
