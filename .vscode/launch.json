@@ -5,7 +5,8 @@
       "name": "HrConfigServerApplication",
       "request": "launch",
       "mainClass": "com.devsuperior.hrconfigserver.HrConfigServerApplication",
-      "projectName": "hr-config-server"
+      "projectName": "hr-config-server",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=54670 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-config-server"
     },
     {
       "type": "java",
@@ -47,6 +48,17 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.devsuperior.hrapigatewayzuul.HrApiGatewayZuulApplication",
       "projectName": "hr-api-gateway-zuul",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=54671 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=hr-api-gateway-zuul"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-HrPayrollApplication<hr-payroll>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.devsuperior.hrpayroll.HrPayrollApplication",
+      "projectName": "hr-payroll",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }
