@@ -1,0 +1,6 @@
+META-INF\maven\com.devsuperior\hr-config-server\pom.properties
+com\devsuperior\hrconfigserver\config\GitConfiguration.class
+META-INF\MANIFEST.MF
+com\devsuperior\hrconfigserver\HrConfigServerApplication.class
+com\devsuperior\hrconfigserver\config\GitConfiguration$1.class
+META-INF\maven\com.devsuperior\hr-config-server\pom.xml
