@@ -2,13 +2,13 @@
 
 ### Atenção: Versões Java 11 e Spring Boot 2.3.4
 
-### Modelo conceitual
+### Modelo conceitual:
 ![image](https://github.com/gsoaresdz/ms-course/assets/69989654/fbb8694e-3d24-4a8f-9547-bb3aa9d0bc44)
 
-### Arquitetura implementada
+### Arquitetura implementada:
 ![image](https://github.com/gsoaresdz/ms-course/assets/69989654/e875ee4e-266a-4992-8739-47bcc33c8b82)
 
-### Autenticação e Autorização com Oauth e JWT
+### Autenticação e Autorização com Oauth e JWT:
 ![image](https://github.com/gsoaresdz/ms-course/assets/69989654/b67f2d9a-6d1f-4cd2-a118-75068ba813a9)
 
 ### Checklist baixar e executar projeto pronto
@@ -23,7 +23,7 @@
   - Eureka server
   - Outros
 
-### Postman 
+### Postman:
 
 Variáveis:
 - api-gateway: http://localhost:8765
