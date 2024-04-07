@@ -1,6 +1,6 @@
 # Microsserviços Java com Spring Boot e Spring Cloud
 
-### Atenção: Versões Java 11 e Spring Boot 2.3.4
+### Atenção: Versão Java 11 e Spring Boot 2.3.4
 
 ### Modelo conceitual:
 ![image](https://github.com/gsoaresdz/ms-course/assets/69989654/fbb8694e-3d24-4a8f-9547-bb3aa9d0bc44)
