@@ -1,4 +1,4 @@
-# Curso Microsserviços Java com Spring Boot e Spring Cloud
+# Microsserviços Java com Spring Boot e Spring Cloud
 
 ### Atenção: Versões Java 11 e Spring Boot 2.3.4
 
