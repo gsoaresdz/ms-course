@@ -32,6 +32,11 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
     postman.setEnvironmentVariable('token', json.access_token);
 }
 ```
+
+### Modelo conceitual
+
+![image](https://github.com/gsoaresdz/ms-course/assets/69989654/fbb8694e-3d24-4a8f-9547-bb3aa9d0bc44)
+
 ### Arquitetura implementada
 ![image](https://github.com/gsoaresdz/ms-course/assets/69989654/e875ee4e-266a-4992-8739-47bcc33c8b82)
 
