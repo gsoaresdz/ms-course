@@ -60,7 +60,7 @@ As seguintes ferramentas foram usadas neste projeto:
 - [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring Cloud](https://spring.io/projects/spring-cloud)
-- [H2 Database]([https://spring.io/projects/spring-cloud](https://h2database.com/html/main.html))
+- [H2 Database](https://h2database.com/html/main.html)
 - [Feign](https://spring.io/projects/spring-cloud-openfeign)
 - [Eureka](https://spring.io/projects/spring-cloud-netflix)
 - [Hystrix](https://github.com/Netflix/Hystrix)
@@ -101,7 +101,7 @@ INSERT INTO tb_worker (name, daily_Income) VALUES ('Alex', 250.0);
 
 application.properties:
 
-```
+```bash
 spring.application.name=hr-worker
 server.port=8001
 
@@ -118,7 +118,7 @@ spring.h2.console.path=/h2-console
 
 application.properties:
 
-```
+```bash
 spring.application.name=hr-payroll
 server.port=8101
 ```
@@ -133,8 +133,7 @@ server.port=8101
 
 Run configuration:
 
-```
-diffCopy code
+```bash
 -Dserver.port=8002
 ```
 
@@ -160,8 +159,7 @@ Atenção: aguardar um pouco depois de subir os microsserviços
 
 ### **2.4 Random port para hr-worker**
 
-```
-bashCopy code
+```bash
 server.port=${PORT:0}
 
 eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
@@ -175,8 +173,7 @@ Atenção: deletar as configurações múltiplas de execução de hr-worker
 
 Atenção: testar antes sem a annotation do Hystrix
 
-```
-arduinoCopy code
+```bash
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
 ribbon.ConnectTimeout=10000
 ribbon.ReadTimeout=20000
@@ -206,22 +203,19 @@ Quando um microsserviço é levantado, antes de se registrar no Eureka, ele busc
 
 hr-worker.properties:
 
-```
-arduinoCopy code
+```bash
 test.config=My config value default profile
 ```
 
 hr-worker-test.properties:
 
-```
-arduinoCopy code
+```bash
 test.config=My config value test profile
 ```
 
 Teste:
 
-```
-bashCopy code
+```bash
 http://localhost:8888/hr-worker/default
 http://localhost:8888/hr-worker/test
 ```
@@ -250,7 +244,7 @@ Atenção: reinicie a IDE depois de adicionar as variáveis de ambiente
 
 ### **4.4 Carga inicial do banco de dados**
 
-```
+```Sql
 INSERT INTO tb_user (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
 INSERT INTO tb_user (name, email, password) VALUES ('Leia Red', 'leia@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
 
@@ -294,7 +288,7 @@ Variáveis:
 
 Script para atribuir token à variável de ambiente do Postman:
 
-```
+```bash
 if (responseCode.code >= 200 && responseCode.code < 300) {
     var json = JSON.parse(responseBody);
     postman.setEnvironmentVariable('token', json.access_token);
@@ -307,8 +301,7 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
 
 Teste no navegador:
 
-```
-jsCopy code
+```bash
 fetch("http://localhost:8765/hr-worker/workers", {
   "headers": {
     "accept": "*/*",
