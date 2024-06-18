@@ -1,5 +1,5 @@
 # Microsserviços Java com Spring Boot e Spring Cloud
-## Atenção: curso específico para versões Java 11 e Spring Boot 2.3.4
+## Atenção: Versões Java 11 e Spring Boot 2.3.4
 
 # Checklist baixar e executar projeto pronto
 
