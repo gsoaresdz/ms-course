@@ -60,7 +60,7 @@ As seguintes ferramentas foram usadas neste projeto:
 - [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [Spring Cloud](https://spring.io/projects/spring-cloud)
-- H2 Database
+- [H2 Database]([https://spring.io/projects/spring-cloud](https://h2database.com/html/main.html))
 - [Feign](https://spring.io/projects/spring-cloud-openfeign)
 - [Eureka](https://spring.io/projects/spring-cloud-netflix)
 - [Hystrix](https://github.com/Netflix/Hystrix)
@@ -93,8 +93,7 @@ Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com/)
 
 Script SQL:
 
-```
-sqlCopy code
+```Sql
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Bob', 200.0);
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Maria', 300.0);
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Alex', 250.0);
